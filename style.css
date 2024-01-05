@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #EAEBEB;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-color: #2F3437;
+}
+
+header {
+    background: #2E3337;
+    color: #EAEBEB;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #444 3px solid;
+    width: 100%;
+}
+
+header a {
+    color: #EAEBEB;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    color: #EAEBEB
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+#banner {
+    background-color: #444;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 60%;
+    height: 15vh;
+}
+
+.banner-image {
+    background-image: url('./static/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.align-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-bottom: 21px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+a {
+    color: #EAEBEB;
+}
+
+.project {
+    color: #EAEBEB;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+}
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.tag {
+    color: #EAEBEB;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.tag1 {
+    background-color: #653D5A;
+}
+
+.tag2 {
+    background-color: #685F40;
+}
+
+.tag3 {
+    background-color: #395855;
+}
+
+.tag4 {
+    background-color: #39556D;
+}
+
+.tag5 {
+    background-color: #6C3D45;
+}
+
+.tag6 {
+    background-color: #4D446D;
+}
+.project-link {
+    flex: 0 0 calc(35% - 40px);
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1000px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header a {
+        font-size: 1em;
+    }
+    #banner {
+        height: 5vh;
+    }
+    header nav {
+        display: none;
+    }
+    .project-link {
+        flex: 0 0 100%;
+    }
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+}
